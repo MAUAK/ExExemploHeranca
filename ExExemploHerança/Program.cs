@@ -11,12 +11,12 @@ namespace ExExemploHerança
             //Instanciando uma varialvel conta juridica e passando os valores nela
             ContaJuridica bacc = new ContaJuridica(1002, "Goten", 0.0, 500.0);
 
-            //Upcasting - instanciando contas de classes filhas(Conta) para uma classe base (Conta juridica) / e já passando valores para as demais variaveis
+            //Upcasting - instanciando um objeto da classes filhas(Conta) para uma classe base (Conta juridica) / e já passando valores para as demais variaveis
             Conta acc1 = bacc;
             Conta acc2 = new ContaJuridica(1003, "Trunks", 0.0, 200.00);
             Conta acc3 = new ContaJuridica(1004, "Vegeta", 0.0, 0.01);
 
-            //Downcasting - instanciando contas de classe base (acc4 - Conta juridica) para uma classe base (acc2 - Conta juridica)
+            //Downcasting - instanciando um objeto da classe base (acc4 - Conta juridica) para uma classe base (acc2 - Conta juridica)
             ContaJuridica acc4 = (ContaJuridica)acc2;
             acc4.Emprestimo(100.0);
 
