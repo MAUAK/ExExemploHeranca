@@ -14,7 +14,7 @@ namespace ExExemploHerança
         public ContaJuridica() { }
 
         //Criando o construtor com parâmetros
-        public ContaJuridica(int numero, string titular, double saldo, double emprestimoLimite) : base(numero, titular, saldo)
+        public ContaJuridica(int numero, string titular, double saldo, double emprestimoLimite) : base (numero, titular, saldo)
         {
             EmprestimoLimite = emprestimoLimite;
         }
@@ -22,8 +22,10 @@ namespace ExExemploHerança
         //Criando o método Emprestimo
         public void Emprestimo(double saldoTotal)
         {
+            //Comparando se o saldo total é menor ou igual ao emprestimo
             if (saldoTotal <= EmprestimoLimite)
             {
+                //Somando saldo com o valor da variavel saldototal e aramazenando na varial Saldo
                 Saldo += saldoTotal;
             }
         }
