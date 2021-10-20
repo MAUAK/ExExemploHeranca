@@ -6,6 +6,17 @@ namespace ExExemploHerança
     {
         static void Main(string[] args)
         {
+            //Criando uma nova conta juridica e passando os valores de cada variável
+            ContaPoupanca conta = new ContaPoupanca(8010, "LARA", 100.0, 500.0);
+
+            //Chamando o método Saque
+            conta.Saque();
+
+            //Imprimindo o saldo da conta cadastrada
+            Console.WriteLine(conta.Saldo);
+
+            /*------------UPCASTING AND DOWNCASTING------------------
+             
             //Instanciando uma Conta e passando os valores nela
             Conta acc = new Conta(1001, "Goku", 0.0);
             //Instanciando uma varialvel conta juridica e passando os valores nela
@@ -39,8 +50,8 @@ namespace ExExemploHerança
                 acc5.atualizacaoSaldo();
                 Console.WriteLine("Atualizado!");
             }
-
-
+            */
+            
         }
     }
 }
