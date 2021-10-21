@@ -28,19 +28,19 @@ namespace ExExemploHerança
         }
 
         //Sobrescrevendo o método saque da super classe Conta
+        /*
         //Aqui está um jeito que consegui fazer com que funcionasse o saque, pois do jeito que estava no slide o saldo (está acima) estava dando errado
         public override void Saque()
         {
             base.Saque();
             Saldo -= 2.0;
-        }
+        }*/
 
-        /*
-         * Não consegui fazer funcionar do jeito que estava no slide, então fiz de outro jeito (acima)
-         * public override void Saque(double saldoTotal)
+        
+        public override void Saque(double saldoTotal)
         {
             base.Saque(saldoTotal);
             Saldo -= 2.0;
-        }*/
+        }
     }
 }
