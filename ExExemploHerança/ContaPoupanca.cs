@@ -33,6 +33,7 @@ namespace ExExemploHerança
         {
             base.Saque(saldoTotal);
             Saldo -= 2.0;
+            //Saldo -= saldoTotal;
         }
     }
 }
