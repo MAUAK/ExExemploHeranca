@@ -28,20 +28,11 @@ namespace ExExemploHerança
             Saldo = saldo;
         }
 
-        
-        //Não consegui fazer funcionar do jeito que estava no slide, então fiz de outro jeito (abaixo)
+        //Criando o método saque com a sobreposição (prefixo virtual)
         public virtual void Saque(double saldoTotal)
         {
             Saldo -= saldoTotal + 5.0;
         }
-
-        /*
-        //Criando o método saque com a sobreposição (prefixo virtual)
-        //Aqui está um jeito que consegui fazer com que funcionasse o saque, pois do jeito que estava no slide o saldo (está acima) estava dando errado
-        public virtual void Saque()
-        {
-            Saldo -= + 5.0;
-        }*/
 
         //Método de Depósito
         public void Deposito(double saldoTotal)
