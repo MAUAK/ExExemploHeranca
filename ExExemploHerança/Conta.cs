@@ -4,8 +4,8 @@ using System.Text;
 
 namespace ExExemploHerança
 {
-    //Criando a classe conta
-    class Conta
+    //Criando a classe abstrata conta
+    abstract class Conta
     {
         //Declarando as variáveis com o encapsulamento
         public int Numero { get; private set; }
