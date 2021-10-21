@@ -10,7 +10,7 @@ namespace ExExemploHerança
             ContaPoupanca conta = new ContaPoupanca(8010, "LARA", 100.0, 500.0);
 
             //Chamando o método Saque
-            conta.Saque();
+            conta.Saque(0.0);
 
             //Imprimindo o saldo da conta cadastrada
             Console.WriteLine(conta.Saldo);
